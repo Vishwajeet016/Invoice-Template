@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+    
+    <style>
+    .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #000000;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+    
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+    
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+    
+    .invoice-box table tr.heading td {
+        background: #f7c6c6;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+    
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.item td{
+        border-bottom: 1px solid #eee;
+    }
+    
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+    
+    .invoice-box table tr.total td:nth-child(2) {
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        @font-face {
+            font-family: Hobo Std Regular;
+            src: url("contnet/Font/Hobo Std Medium.ttff");
+          
+              font-family: semibold;
+              src: url("contant/font/Montserrat-SemiBold.ttff");
+          }
+    }
+    
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    }
+    
+    .rtl table {
+        text-align: right;
+    }
+    
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
+    .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+}
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                        
+                            <td style="text-align: center;">
+                              <span style="float: left;"> <img src="content/asset/Asset 1ldpi.png" style="width:100%; max-width:100px;"></span>
+                                <span style="color: red; font-size: 55px;text-align: center;"> MEKVAHAN </span>
+                               <span style="display: list-item; font-weight: 600;font-size: 20px;"> Always cares ur vahan </span>
+                            </td>
+            </tr>
+        </div>
+            <tr>
+                <td style="text-align: center;"><u>Thanks for choosing our services, <strong>Mr.Abhishek!</strong></u>
+                    <br/><span>We know the language of machines! Machines talk to us.</span>
+                </td>
+            </tr>
+            
+            
+            <tr style="font-size: 14px;line-height: 25px;" class="information">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                Order Id- HTLPPMV0001<br>
+                                Invoice no- #MV1901110001<br>
+                                Order placed at: 30/11/2018, 10:11 PM<br>
+                                Pickup due date: 30/11/2018, 10:53 PM<br>
+                                Service location: Mekvahan vendor #11
+                                
+                            </td>
+                            
+                            <td>
+                                1 January 2019<br>
+                                Billed To - Mr. Abhishek<br>
+                                9717747611<br>
+                                ( South Delhi 110047 )<br>
+                                Amount- <strong>Rs.830.00</strong> 
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table style="background-image: url('content/asset/Asset 2xhdpi.png');background-size: contain; border: 0;">
+            <tr class="heading">
+                <td style="width: 50%;">
+                    Item name
+                </td>
+
+                <td style="width: 20%; text-align: center;">
+                    Quantity
+                </td>
+                
+                <td style="width: 10%;text-align: right;">
+                    Price
+                </td>
+            </tr>
+            
+            <tr class="details">
+                <td style="width: 50%;">
+                    <p>Comprehensive Service
+                    (Castrol Engine Oil,Air Filter,Additives,Gear oil 120ml
+Replace)
+( 25 Points Checkup )
+( Brake Servicing ) ( Lag,Lock & Wheel Checking ) </p>
+                </td>
+                <td style="width: 20%; text-align: center;">
+                    1
+                </td>
+                
+                <td style="float: right;">
+                   Rs.650.00
+                </td>
+                <tr><td style="border-top: 1px solid #000000; width: 70% ;"></td></tr>
+            </tr>
+            <tr>
+                <td>Bike Wash & Polish ( Coupon Code Applied “MVNEW”)</td>
+                <td style="text-align: center;"> 1</td>
+                <td>Free</td>
+                <tr><td style="border-top: 1px solid #000000; width: 70% ;"></td></tr>
+            </tr>
+            <tr style="border-bottom: 1px;">
+                <td>Seat Cover ( Honda Active )</td>
+                <td style="text-align: center;">1</td>
+                <td>Rs.180.00</td>
+                <tr><td style="border-top: 1px solid #000000; width: 70%;"></td></tr>
+            </tr>
+            <tr style="border-bottom: 1px;">
+                <td></td>
+                <td style="text-align: center;">Item Total:</td>
+                <td>Rs.830.00</td>
+            </tr>
+            <tr style="border-bottom: 1px;">
+                <td></td>
+                <td style="text-align: center;">GST:</td>
+                <td>Rs.41.50</td>
+            </tr>
+            <tr style="border-bottom: 1px;">
+                <td></td>
+                <td style="text-align: center;">Additional Charges:</td>
+                <td>Rs.00.00</td>
+            </tr>
+            <tr style="border-bottom: 1px;">
+                <td></td>
+                <td style="text-align: center;">Discount Applied (RC2-BYU0OU):</td>
+                <td>Rs.30.00</td>
+            </tr>
+                  
+            
+            <tr style="background-color: aquamarine;" class="total">
+                <td></td>
+                <td></td>
+                
+                
+                <td style="float: right;">
+                   Total: Rs.841.50
+                </td>
+            </tr>
+        </table>
+    
+    <div>
+        <p style="background-color: #B0C4DE; width: 100%; text-align: center;padding: 1%;">
+            Payment mode: Paid by Paytm wallet
+        </p>
+    </div>
+    <div>
+        <p style="border-top: 1px solid #000000; border-bottom: 1px solid #000000;"> Disclaimer: This is an acknowledgement of Service of the Order and not an actual invoice. Details mentioned above including
+        the menu prices and taxes (as applicable) are as provided by the Service Vendors to Mekvahan. Responsibility of charging (or not
+        charging) taxes lies with the Service Vendors and Mekvahan disclaims any liability that may arise in this respect.</p>        
+        <button style="margin-left: 80%; border-radius: 30px; border: 1px; background-color: rgb(90, 90, 202); color: white; padding: 2%;" type="button"class="">Download Invoice</button>
+    </div>
+    
+    <div>
+        <h1 style="font-family: Hobo Std Regular; text-align: center;"> <span style="color: red;">FOR YOU,</span> FROM US </h1>
+        <img style="height: 60%; width: 50%;text-align: center; margin-left: 27%;" src="content/asset/Asset 3xxhdpi.png"/>
+        <p style="text-align: center;font-family: semibold; font-weight: 600; font-size: 15px;">Glad you chose meKvahan to make your life simpler! Check out offers in different services
+            <a href="#">here.</a></p>
+            <p></p>
+            <div style="margin-left: 7%; font-weight: bold;">Cheers! <br>
+            The meKvahan Team.</div>
+    </div>
+    <table>
+        <tbody><tr><td style="border-top: 1px solid pink; width: 70% !important;"></td></tr>
+        <tr><td style="text-align: center;">(This is a computer generated document. Does not require any signature.)</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Stay_Connected</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="width: 10%;">About Us</td>
+            <td style="width: 10%;">Privacy policy</td>
+            <td style="width: 20%;">Terms & Conditions</td>
+            <td></td>
+            <td style="width: 20%;"><small>Available on:</small> </td>
+            <td style="width:30%;"><img width="100%" height="50%" src="content/asset/Asset 4hdpi.png"/> </td>
+            <td style="width: 40%;"> <img style="height: 30px; " src="content/asset/Asset 5hdpi.png"/> </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</body>
+</html>
